@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= “X-UA-Compatible” content= “IE=edge”>
+    <meta name= “viewport” content= “width=device-width, initial-scale=1.0” > 
+    <title>Haz tu pedido</title>
+</head>
+<body>
+    <img src="./images/logo.png" alt="logo" width="150px">
+    <h1>Completa tu pedido</h1>
+
+    <form action="pedido.js">
+
+        <h2>Datos del cliente</h2>
+        <label for="Nombre">Nombre(s)</label><br>
+        <input type="text" id placeholder="Nombre"><br><br>
+        
+        <label for="Apellidos">Apellido(s)</label><br>
+        <input type="text" id placeholder="Apellido"><br><br>
+
+        <label for="Cumpleaños">Cumpleaños</label><br>
+        <input type="date" id="fechacumple" name="cumple"><br><br>
+
+        
+        <p>¿Requieres factura?(opcional)</p>
+        <input type="radio" id="si" name="siono" value="si">
+        <label for="si">Sí</label><br>
+        <input type="radio" id="no" name="siono" value="no">
+        <label for="no">No</label><br><br>
+
+        <label for="rfc">RFC(opcional)</label><br>
+        <input type="text" id placeholder=" "><br><br>
+
+        <label for="calle">Calle</label><br>
+        <input type="text" id placeholder=" "><br><br>
+
+        <label for="localidad">Localidad</label><br>
+        <input type="text" id placeholder=" "><br><br>
+
+        <label for="cp">Código Postal</label><br>
+        <input type="tel" id="cp" name="cp" maxlength="5"><br><br>
+
+        <label for="tel1">Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+        <label for="email">e-mail</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="checkbox" id="promo" name="promo" value="promo">
+        <label for="promo">¿Deseas recibir noticias sobre ofertas y promociones especiales?</label><br><br>
+
+        <hr>
+
+        <h2>Detalles del pastel</h2>
+        <label for="bizcocho">Elige tu bizcocho favorito</label><br>
+        <input list="bizcocho">
+        <datalist id="bizcocho">
+            <option value="Bizcocho sabor limón">
+            <option value="Bizcocho sabor chocolate">
+            <option value="Bizcocho sabor vainilla">
+            <option value="Bizcocho sabor zanahoria">
+            <option value="Bizcocho sabor naranja">
+            <option value="Bizcocho sabor fresa">
+        </datalist><br><br>
+
+        <label for="betun">Elige tu betún favorito</label><br>
+        <input list="betun">
+        <datalist id="betun">
+            <option value="Betún sabor limón">
+            <option value="Betún sabor chocolate">
+            <option value="Betún sabor vainilla">
+            <option value="Betún sabor fresa">
+            <option value="Betún sabor moca">
+            <option value="Betún sabor queso crema">
+        </datalist><br><br>
+
+        <ul>
+            <li>Topings
+                <ul>
+                     <li><input type="checkbox" id="frutosr" name="frutosr" value="frutosr">
+                        <label for="frutosr">Frutos rojos</label><br>
+                    </li>
+                     <li><input type="checkbox" id="rayadura" name="rayadura" value="rayadura">
+                        <label for="rayadura">Rayadura de limón</label><br>
+                    </li>
+                     <li><input type="checkbox" id="chispaschoco" name="chispaschoco" value="chispaschoco">
+                        <label for="chispaschoco">Chispas de chocolate</label><br>
+                    </li>
+                     <li><input type="checkbox" id="chispasb" name="chispasb" value="chispasb">
+                        <label for="chispasb">Chispas de chocolate blanco</label><br>
+                    </li>
+                     <li><input type="checkbox" id="cereza" name="cereza" value="cereza">
+                        <label for="cereza">Cerezas</label><br>
+                    </li>  
+                     <li><input type="checkbox" id="durazno" name="durazno" value="durazno">
+                        <label for="durazno">Duraznos</label><br>
+                    </li>   
+                     <li><input type="checkbox" id="azucar" name="azucar" value="azucar">
+                        <label for="azucar">Azúcar glass</label><br>
+                    </li>
+                     <li><input type="checkbox" id="oro" name="oro" value="oro">
+                        <label for="oro">Hojas de oro</label><br>
+                    </li>      
+                </ul>
+            </li>
+            <li>Figuras de betún
+                <ul>
+                    <li><input type="checkbox" id="rosas" name="rosas" value="rosas">
+                        <label for="rosas">Rosas</label><br>
+                    </li>
+                    <li><input type="checkbox" id="mariposas" name="mariposas" value="mariposas">
+                        <label for="mariposas">Mariposas</label><br>
+                    </li>
+                    <li><input type="checkbox" id="galletas" name="galletas" value="galletas">
+                        <label for="galletas">Galletas</label><br>
+                    </li>
+                </ul>
+            </li>
+            <li>Adornos
+                <ul>
+                    <li><input type="checkbox" id="corazones" name="corazones" value="corazones">
+                        <label for="corazones">Corazones</label><br>
+                    </li>
+                    <li><input type="radio" id="sencilla" name="senomag" value="sencilla">
+                        <label for="sencilla">Vela sencilla</label><br>
+                    </li>
+                    <li><input type="radio" id="magica" name="senomag" value="magica">
+                        <label for="magica">Vela mágica</label><br></li>
+                </ul>
+            </li>
+        </ul>
+
+        <br><br>
+        <hr>
+
+        <h2>Especiales</h2>
+        <label for="special">O escoge una especialidad</label><br>
+        <input list="special">
+        <datalist id="special">
+            <option value="Limón especial">
+            <option value="Receta secreta de  la abuela Silvia">
+            <option value="Chocolate elegante">
+        </datalist><br><br>
+        <hr>
+
+        <h2>Pago</h2>
+        <input type="radio" id="paypal" name="paypalocard" value="paypal">
+        <label for="paypal">PayPal</label><br>
+        <input type="radio" id="Tarjeta" name="paypalocard" value="Tarjeta">
+        <label for="Tarjeta">Tarjeta</label><br><br>
+
+        <hr>
+
+        <input type="reset">
+        <input type="submit" value="Pagar"><br>
+
+        <a href="./index.html">
+            <input type="button" value="Menú" >
+        </a>
+
+        <br><br>
+
+        
+    </form>
+    
+</body>
+</html>
